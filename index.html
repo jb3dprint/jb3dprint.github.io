@@ -9,7 +9,13 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">JB3D<br><span>Impressão 3D</span></a>
+      <a class="logo" href="/">
+        <img src="/assets/images/JB3D_logo.png" alt="JB3D emblem">
+        <div class="brand-text">
+          <strong class="brand-title">JB3D</strong>
+          <span class="brand-sub">Impressão 3D</span>
+        </div>
+      </a>
       <nav class="nav" id="nav">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -18,9 +24,9 @@
           <li><a href="#consultoria">Consultoria</a></li>
           <li><a href="#cursos">Cursos</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato" class="btn btn-outline">Contato</a></li>
         </ul>
       </nav>
+      <a href="#contato" class="btn btn-primary header-cta">Solicitar Orçamento</a>
       <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
@@ -29,7 +35,7 @@
     <section class="hero" id="home">
       <div class="hero-inner container">
         <div class="hero-content">
-          <h4 class="eyebrow">Soluções completas</h4>
+          <span class="hero-badge">Soluções completas</span>
           <h1>Transformamos ideias em <span class="accent">soluções reais.</span></h1>
           <p>Impressão 3D sob demanda, modelos exclusivos, consultoria especializada e cursos práticos para levar seus projetos ao próximo nível.</p>
           <div class="cta-row">
@@ -44,31 +50,41 @@
           </ul>
         </div>
         <div class="hero-media">
-          <img src="/assets/images/hero.jpg" alt="Peça impressa em 3D">
+          <div class="hero-card">
+            <img src="/assets/images/hero.png" alt="Peça impressa em 3D">
+          </div>
         </div>
       </div>
     </section>
 
     <section class="services" id="servicos">
       <div class="container">
-        <h2>Serviços que agregam valor ao seu projeto</h2>
+        <div class="section-head">
+          <p class="section-kicker">Nossos serviços</p>
+          <h2>Serviços que agregam valor ao seu projeto</h2>
+          <p class="section-copy">Da impressão à consultoria, entregamos soluções completas para transformar ideias em peças e produtos reais.</p>
+        </div>
         <div class="cards">
           <article class="card">
+            <div class="card-icon" aria-hidden="true">🖨️</div>
             <h3>Impressão 3D sob demanda</h3>
             <p>Peças funcionais, protótipos, peças técnicas e muito mais. Diversos materiais e acabamentos com alta qualidade.</p>
             <a href="#contato" class="link">Saiba mais →</a>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">🧩</div>
             <h3>Modelos exclusivos</h3>
             <p>Coleção própria de modelos impressos com design exclusivo e funcional — decoração, utilidades e gadgets.</p>
             <a href="#modelos" class="link">Ver coleção →</a>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">💡</div>
             <h3>Consultoria especializada</h3>
             <p>Suporte técnico em design para impressão 3D, escolha de materiais e otimização de peças e soluções para sua aplicação.</p>
             <a href="#consultoria" class="link">Saiba mais →</a>
           </article>
           <article class="card">
+            <div class="card-icon" aria-hidden="true">🎓</div>
             <h3>Cursos e Treinamentos</h3>
             <p>Aprenda impressão 3D na prática. Cursos para iniciantes, avançados e empresas. Do básico ao nível profissional.</p>
             <a href="#cursos" class="link">Ver cursos →</a>
@@ -115,8 +131,9 @@
     </section>
 
     <section class="testimonials">
-      <div class="container">
+      <div class="container testimonials-inner">
         <div class="test-left">
+          <p class="section-kicker">Confiança</p>
           <h3>Confiança que se imprime.</h3>
           <p>Cada projeto é único. Nosso compromisso é entregar qualidade, precisão e um atendimento que realmente faz a diferença.</p>
           <ul class="metrics">
@@ -127,8 +144,13 @@
           </ul>
         </div>
         <div class="test-right">
-          <blockquote>“JB3D entregou exatamente o que precisávamos: peças de alta qualidade, no prazo e com ótimo acabamento. Atendimento excepcional!”</blockquote>
-          <cite>Lucas Faria — Engenheiro Mecânico</cite>
+          <div class="quote-card">
+            <div class="quote-image">
+              <img src="/assets/images/client.jpg" alt="Peça impressa em 3D destacada">
+            </div>
+            <blockquote>“Gostei muito da qualidade da peça, dos detalhes da peça anatômica e do trabalho realístico. Focou bem verdadeiro.”</blockquote>
+            <cite>Dr. Rodrigo Campos — RS Fisioclin</cite>
+          </div>
         </div>
       </div>
     </section>
