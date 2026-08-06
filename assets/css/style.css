@@ -10,9 +10,10 @@
 body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#0b1220;background:#f6f8fb}
 .container{max-width:1100px;margin:0 auto;padding:24px}
 .site-header{background:#fff;border-bottom:1px solid #e6eef8;position:sticky;top:0;z-index:40}
+.site-header .container{padding-top:12px;padding-bottom:12px}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .logo{font-weight:700;color:#0b1220;text-decoration:none;display:flex;align-items:center;gap:12px}
-.logo img{height:72px;display:block}
+.logo img{height:64px;display:block}
 .brand-text{display:flex;flex-direction:column;line-height:1}
 .brand-title{font-size:34px;color:#0b1220;font-weight:900;letter-spacing:0.5px}
 .brand-sub{font-size:14px;color:var(--muted);font-weight:600}
@@ -29,6 +30,7 @@ body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#0b1220;backgro
   .brand-title{font-size:20px}
   .brand-sub{font-size:12px}
 }
+.nav{position:relative}
 .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
 .nav a{text-decoration:none;color:#0b1220}
 .nav-toggle{display:none;background:none;border:0;font-size:22px}
@@ -103,6 +105,24 @@ body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#0b1220;backgro
 .link{color:var(--accent);text-decoration:none;font-weight:700}
 .link:hover{text-decoration:underline}
 
+.consulting{padding:80px 0;background:#eef5fb}
+.courses{padding:80px 0;background:linear-gradient(135deg,#f8f2ff 0%, #f2ebff 100%)}
+.consulting-grid{display:grid;grid-template-columns:1fr minmax(300px,0.9fr);gap:32px;align-items:center;margin-top:32px}
+.consulting-copy p{margin:0 0 22px;color:#475569;line-height:1.75;font-size:1.02rem}
+.consulting-list{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:12px}
+.consulting-list li{background:#fff;border:1px solid #dde6f1;border-radius:14px;padding:14px 18px;color:#192432}
+.consulting-media img{width:100%;height:auto;border-radius:22px;display:block;object-fit:cover;box-shadow:0 24px 60px rgba(17,38,86,0.12)}
+.course-showcase{display:grid;gap:24px;align-items:start;margin-top:32px}
+.single-course .course-main{max-width:860px;margin:0 auto}
+.course-main{background:linear-gradient(135deg,#ffffff 0%, #f5f0ff 100%);padding:30px;border-radius:24px;border:1px solid #e4dcff;box-shadow:0 18px 40px rgba(76,55,128,0.08)}
+.course-badge{display:inline-block;margin:0 0 10px;padding:7px 11px;border-radius:999px;background:#efe8ff;color:#6d43d2;font-weight:700;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase}
+.course-main h3{margin:0 0 12px;font-size:1.45rem;color:#170f2c}
+.course-main p{margin:0 0 16px;color:#5c5671;line-height:1.75}
+.course-features{list-style:none;padding:0;margin:0 0 20px;display:grid;gap:10px}
+.course-features li{background:#fff;border:1px solid #ece5ff;border-radius:12px;padding:10px 12px;color:#433e53}
+.course-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.course-meta span{background:#f4edff;border:1px solid #e3d9ff;border-radius:999px;padding:8px 12px;color:#5b3f9b;font-size:0.94rem;font-weight:600}
+
 .models{padding:48px 0;background:#071025;color:#fff}
 .models h2{color:#fff;margin-bottom:18px}
 .carousel{position:relative;display:flex;align-items:center}
@@ -127,8 +147,20 @@ body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#0b1220;backgro
 
 .cta-banner{background:linear-gradient(90deg,#0b7cff,#0047b3);color:#fff;padding:30px 0;text-align:center}
 .contact{padding:36px 0}
-.site-footer{background:#071025;color:#cfe6ff;padding:24px 0}
-.footer-inner{display:flex;gap:24px;align-items:center;justify-content:space-between}
+.site-footer{background:#061021;color:#cfe6ff;padding:28px 0 16px}
+.footer-inner{display:flex;gap:32px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.brand strong{display:block;font-size:1.4rem;color:#fff;margin-bottom:6px}
+.brand p{margin:0;color:#b9d0f5}
+.footer-contact{max-width:300px}
+.footer-contact-label{margin:0 0 10px;color:#b7d0ff;font-size:0.85rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:700}
+.footer-contact p{margin:0 0 8px;color:#d4e4ff;line-height:1.7}
+.footer-link{display:block;color:#d4e4ff;text-decoration:none;margin-bottom:6px}
+.footer-link:hover{text-decoration:underline}
+.footer-nav ul{display:flex;flex-wrap:wrap;gap:18px;list-style:none;margin:0;padding:0}
+.footer-nav a{text-decoration:none;color:#cfe6ff;transition:color .2s ease}
+.footer-nav a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);margin-top:22px;padding-top:18px}
+.legal{margin:0;color:#9bb0d1;font-size:0.95rem}
 
 /* Responsive */
 @media(max-width:900px){
@@ -148,4 +180,6 @@ body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#0b1220;backgro
   .services{padding:64px 0}
   .cards{grid-template-columns:1fr}
   .metrics{grid-template-columns:1fr}
+  .course-showcase{grid-template-columns:1fr}
+  .course-main{padding:24px}
 }

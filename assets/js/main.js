@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded',function(){
   navToggle && navToggle.addEventListener('click',function(){
     nav.classList.toggle('open');
   });
+  if(nav){
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click',function(){
+        nav.classList.remove('open');
+      });
+    });
+  }
 
   // Simple carousel: scroll by card width
   var prev = document.querySelector('.carousel-btn.prev');
