@@ -9,24 +9,30 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/">
+      <a class="logo" href="#home" aria-label="JB3D início">
         <img src="/assets/images/JB3D_logo.png" alt="JB3D emblem">
-        <div class="brand-text">
+        <span class="brand-text">
           <strong class="brand-title">JB3D</strong>
           <span class="brand-sub">Impressão 3D</span>
-        </div>
+        </span>
       </a>
-      <nav class="nav" id="nav">
-        <ul>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu" aria-controls="site-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#modelos">Modelos</a></li>
           <li><a href="#consultoria">Consultoria</a></li>
           <li><a href="#cursos">Cursos</a></li>
         </ul>
+        <a href="#contato" class="btn btn-primary nav-cta">Solicitar Orçamento</a>
       </nav>
-      <a href="#contato" class="btn btn-primary header-cta">Solicitar Orçamento</a>
-      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
 
